@@ -26,8 +26,8 @@ def server_working(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', TemplateView.as_view(template_name='index.html')),
-    path('', server_working),
+    path('', TemplateView.as_view(template_name='index.html')),
+    # path('', server_working),
     path('api/products/', include('base.urls.product_urls')),
     path('api/users/', include('base.urls.user_urls')),
     path('api/orders/', include('base.urls.order_urls')),
