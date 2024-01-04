@@ -45,7 +45,7 @@ function App() {
           <Route path='/admin/orderlist' component={OrderListScreen} />
         </Container>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

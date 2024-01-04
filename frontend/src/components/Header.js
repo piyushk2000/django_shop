@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, Row, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
+import './Navbar.css'
 
 function Header() {
 
@@ -18,10 +19,11 @@ function Header() {
 
     return (
         <header>
+            {/* <Navbar  className="navbar-inner"  expand="lg" collapseOnSelect> */}
             <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
                 <Container>
                     <LinkContainer to='/'>
-                        <Navbar.Brand>ProShop</Navbar.Brand>
+                        <Navbar.Brand>E-Shop</Navbar.Brand>
                     </LinkContainer>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
