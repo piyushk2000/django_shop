@@ -191,10 +191,15 @@ function OrderScreen({ match, history }) {
                                             {!sdkReady ? (
                                                 <Loader />
                                             ) : (
-                                                    <PayPalButton
+                                                <>
+                                                <Button onClick={successPaymentHandler(true)}>
+                                                    Mark as paid
+                                                </Button>
+                                                    {/* <PayPalButton
                                                         amount={order.totalPrice}
                                                         onSuccess={successPaymentHandler}
-                                                    />
+                                                        /> */}
+                                                        </>
                                                 )}
                                         </ListGroup.Item>
                                     )}
