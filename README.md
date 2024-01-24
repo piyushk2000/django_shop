@@ -1,7 +1,4 @@
 
-![DEMO](../master/static/images/proshop_django_demo.png)
-
-
 # Features
 * Full featured shopping cart
 * Product reviews and ratings
